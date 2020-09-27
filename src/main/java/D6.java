@@ -4,15 +4,29 @@ public class D6 {
 
     private byte value;
 
-    public D6(){
-        value = 1;
+    public D6() {
+        this((byte) 1);
+    }
+
+    public D6(byte value) {
+        if (isDiceValue(value))
+            this.value = value;
+        else
+            this.value = 1;
     }
 
     public void setValue(byte x) throws Exception{
-        if (x < MIN || x > MAX){
+        if (!isDiceValue(x)){
             throw new Exception("value beyond limits");
         }
         value = x;
+    }
+
+    private boolean isDiceValue(byte x){
+        if (x < MIN || x > MAX){
+            return false;
+        }
+        return true;
     }
 
     public byte getValue(){
