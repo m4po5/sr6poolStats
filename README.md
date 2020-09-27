@@ -6,7 +6,7 @@ java program to calculate dicepool probabilities against target numbers
 - impact of some edge options
 
 ## Example Tables
-The entries for 3 successes are highlighted, because SR3 uses it for 'average' difficulty tasks.
+The entries for 3 successes are highlighted, because SR6 uses it for 'average' difficulty tasks.
 
 3 dice|total combinations | Chance of x or more successes
 -|-|-
